@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.gradient-container {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(0, 10, 0), rgb(1, 58, 1), white);
+    position: relative;
+}
+
+.gradient-container .left {
+    width: 30%;
+    background-color: transparent;
+}
+
+.gradient-container .right {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: transparent;
+}
+
+ .gradient-container .right img {
+    width: 50%;
+}
+
+.write-up {
+    background-color: rgba(0, 0, 0, 0.244);
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    display: none;
+}
+
+
+.write-up .animate-up {
+    width: 60%;
+    margin-left: 5vw;
+    position: absolute;
+    animation: slidedown 4s infinite;
+}
+
+@keyframes slidedown {
+    0% {top: -30vh;}
+    80% {top: 20vh;}
+    100% {top: 20vh;}
+}
+
+.write-up .animate-up h3 {
+    color: orange;
+    margin-bottom: 3vh;
+}
+
+.write-up .animate-up h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 2vh;
+}
+
+.write-up .animate-up p {
+    color: white;
+    font-size: 20px;
+    line-height: 5vh;
+}
+
+.write-up .animate-down {
+    margin-left: 5vw;
+    width: 30%;
+    position: absolute;
+    animation: slideup 4s infinite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.write-up .animate-down a {
+    text-decoration: none;
+}
+
+.write-up .animate-down button {
+    padding: 20px 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.write-up .animate-down .left-btn {
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+}
+
+.write-up .animate-down .left-btn:hover {
+    background-color: white;
+    color: green;
+}
+
+.write-up .animate-down .right-btn {
+    background-color: transparent;
+    color: green;
+}
+
+@keyframes slideup {
+    0% {bottom: -30vh;}
+    80% {bottom: 10vh;}
+    100% {bottom: 10vh;}
+}
+
+#div1 {
+    display: block;
+}
+
+.button {
+    font-size: 18px;
+    padding: 20px 23px;
+    border: none;
+    border-radius: 80px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}  
+
+.alternating-buttons {
+    position: absolute;
+    bottom: 15vh;
+    right: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 13vw;
+}
+
+.alternating-buttons h3 {
+    color: white;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    .gradient-container {
+        height: 60vh;
+    }
+
+    .write-up {
+        height: 60vh;
+    }
+    
+    .write-up .animate-up {
+        width: 60%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        color: orange;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 20px;
+        line-height: 2vh;
+        font-weight: bold
+    }
+    
+    .write-up .animate-down {
+        width: 40%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 20vh;}
+        100% {bottom: 20vh;}
+    }
+    
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    .gradient-container {
+        height: 60vh;
+    }
+
+    .write-up {
+        height: 60vh;
+    }
+    
+    .write-up .animate-up {
+        width: 60%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        color: orange;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 20px;
+        line-height: 2vh;
+        font-weight: bold
+    }
+    
+    .write-up .animate-down {
+        width: 40%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 15vh;}
+        100% {bottom: 15vh;}
+    }
+    
+}
+
+
+@media screen and (max-width:540px) {
+
+    .gradient-container {
+        height: 100vh;
+    }
+
+    .write-up {
+        height: 100vh;
+    }
+    
+    .write-up .animate-up {
+        width: 90%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 20vh;}
+        100% {top: 20vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        color: orange;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 15px;
+        line-height: 3vh;
+        font-weight: bold
+    }
+    
+    .write-up .animate-down {
+        width: 70%;
+    }
+    
+
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 20vh;}
+        100% {bottom: 20vh;}
+    }
+    
+}
+
+
+@media screen and (max-width:430px) {
+
+    .gradient-container {
+        height: 80vh;
+    }
+
+    .write-up {
+        height: 80vh;
+    }
+    
+    .write-up .animate-up {
+        width: 90%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 20px;
+        line-height: 2vh;
+        font-weight: bold
+    }
+    
+    .write-up .animate-down {
+        width: 70%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 20vh;}
+        100% {bottom: 20vh;}
+    }
+
+    .alternating-buttons {
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width:390px) {
+
+    .gradient-container {
+        height: 90vh;
+    }
+
+    .write-up {
+        height: 90vh;
+    }
+    
+    .write-up .animate-up {
+        width: 90%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        margin-bottom: 1vh;
+    }
+
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 15px;
+        line-height: 2vh;
+        font-weight: bold
+    }
+    
+    .write-up .animate-down {
+        width: 70%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 20vh;}
+        100% {bottom: 20vh;}
+    }
+    
+}
