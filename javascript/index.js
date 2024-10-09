@@ -4,7 +4,6 @@ window.onload = function() {
     let intervalId;
 
       // Debug: Check if script is running
-        // console.log("Script loaded");
   
     // Function to show a specific div
     function showDiv(index) {
