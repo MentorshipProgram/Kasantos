@@ -4,7 +4,7 @@ window.onload = function() {
     let intervalId;
 
       // Debug: Check if script is running
-        console.log("Script loaded");
+        // console.log("Script loaded");
   
     // Function to show a specific div
     function showDiv(index) {
@@ -47,3 +47,14 @@ window.onload = function() {
   };
   
 
+// another section
+
+document.addEventListener("scroll", function() {
+  const animatedElement = document.querySelector('.animated-element');
+  const elementPosition = animatedElement.getBoundingClientRect().top;
+  const viewportHeight = window.innerHeight;
+
+  if (elementPosition < viewportHeight) {
+    animatedElement.classList.add('active');
+  }
+});

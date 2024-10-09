@@ -109,7 +109,7 @@ body {
 }
 
 @keyframes slideup {
-    0% {bottom: -30vh;}
+    0% {bottom: 0vh;}
     80% {bottom: 10vh;}
     100% {bottom: 10vh;}
 }
@@ -141,7 +141,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aqua; */
     width: 13vw;
 }
 
@@ -156,6 +155,163 @@ button {
 .green {
     background-color: green;
     color: white;
+}
+
+/* about us section */
+
+.about-us-container {
+    width: 90%;
+    margin: 20vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh 0;
+    position: relative;
+}
+
+.about-us-container .left {
+    width: 47%;
+    border-radius: 5px;
+}
+
+.about-us-container .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.about-us-container .right {
+    width: 47%;
+}
+
+.about-us-container .active {
+    position: absolute;
+    animation: from-right 1s 1;
+    right: 0vw;
+    top: 0%;
+}
+
+@keyframes from-right {
+    0% {right: -10vw; color: white;}
+    100% {right: 0vw;}
+}
+
+.about-us-container .right .about-us {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.about-us-container .right .about-us > p {
+    margin: 0;
+    font-size: 20px;
+    color: green;
+}
+
+.about-us-container .right .about-us .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: green; /* Dark green color */
+    margin-left: 10px;
+}
+
+.about-us-container .right h1 {
+    margin: 3vh 0;
+    font-size: 45px;
+}
+
+.about-us-container .right h1 .diff {
+    color: orange;
+}
+
+.about-us-container .right p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.626);
+    line-height: 4.5vh;
+}
+
+.about-us-container .right .aims {
+    margin: 4vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-container .right .aims .mission {
+    width: 47%;
+}
+
+.about-us-container .right .aims .vission {
+    width: 47%;
+}
+
+.about-us-container .right .aims h3 {
+    margin-bottom: 2vh;
+}
+
+.about-us-container .right .about-banner {
+    height: 23vh;
+    border-radius: 10px;
+}
+
+.about-us-container .right .about-banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.about-us-container .right .bottom {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.about-us-container .right .bottom a {
+    text-decoration: none;
+}
+
+.about-us-container .right .bottom button {
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    padding: 20px 30px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.about-us-container .right .bottom button:hover {
+    background-color: green;
+    color: white;
+}
+
+.about-us-container .right .bottom .others {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.about-us-container .right .bottom .others i {
+    width: 30%;
+    color: green;
+    font-size: 50px;
+}
+
+.about-us-container .right .bottom .others .right {
+    width: 70%;
+    position: relative;
+}
+
+.about-us-container .right .bottom .others .right p {
+    font-size: 15px;
+    color: green;
+}
+
+.about-us-container .right .bottom .others .right span {
+    font-size: 20px;
+    color: orange;
 }
 
 
@@ -215,6 +371,70 @@ button {
         100% {bottom: 20vh;}
     }
     
+    /* about-us section */
+
+    .about-us-container {
+        display: block;
+        padding: 0vh 0;
+        margin: 10vh auto;
+    }
+
+    .about-us-container .left {
+        width: 100%;
+    }
+
+    .about-us-container .right {
+        width: 90%;
+        margin: 5vh auto;
+    }
+
+    .about-us-container .active {
+        position: absolute;
+        animation: from-right 1s 1;
+        right: 0vw;
+        top: 100%;
+    }
+    
+    @keyframes from-right {
+        0% {right: -20vw; color: white;}
+        100% {right: 0vw;}
+    }
+
+    .about-us-container .right p {
+        line-height: 2.5vh;
+        color: rgba(0, 0, 0, 0.856);
+    }
+
+    .about-us-container .right .aims {
+        display: block;
+    }
+
+    .about-us-container .right .aims .mission {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .about-us-container .right .aims .vission {
+        width: 100%;
+    }
+
+    .about-us-container .right .aims h3 {
+        margin-bottom: 0;
+    }
+
+    .about-us-container .right .about-banner {
+        height: 15vh;
+    }
+
+    .about-us-container .right .about-banner img {
+        object-fit: cover;
+    }
+
+    .about-us-container .right .bottom {
+        margin-top: 1vh;
+    }
+
+
 }
 
 
@@ -380,6 +600,71 @@ button {
     .alternating-buttons {
         display: none;
     }
+
+    .about-us-container .right {
+        width: 100%;
+    }
+
+    
+.about-us-container .right h1 {
+    margin: 3vh 0;
+    font-size: 34px;
+}
+
+    .about-us-container .right p {
+        line-height: 3.4vh;
+    }
+
+    .about-us-container .right .about-banner {
+        height: 12vh;
+    }
+
+    .about-us-container .right .bottom {
+        width: 100%;
+    }
+
+    .about-us-container .right .bottom button {
+        border: none;
+        border-radius: 5px;
+        background-color: orange;
+        color: black;
+        padding: 20px 20px;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+    
+    .about-us-container .right .bottom button:hover {
+        background-color: green;
+        color: white;
+    }
+    
+    .about-us-container .right .bottom .others {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+    }
+    
+    .about-us-container .right .bottom .others i {
+        width: 30%;
+        color: green;
+        font-size: 50px;
+    }
+    
+    .about-us-container .right .bottom .others .right {
+        width: 70%;
+    }
+    
+    .about-us-container .right .bottom .others .right p {
+        font-size: 15px;
+        color: green;
+    }
+    
+    .about-us-container .right .bottom .others .right span {
+        font-size: 20px;
+        color: orange;
+    }
+    
     
 }
 
