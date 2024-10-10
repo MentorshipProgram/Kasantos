@@ -57,3 +57,20 @@ document.addEventListener("scroll", function() {
     animatedElement.classList.add('active');
   }
 });
+
+
+// youtube video
+
+document.getElementById('playButton').addEventListener('click', function() {
+  var videoContainer = document.getElementById('videoContainer');
+  var iframe = document.getElementById('youtubeVideo');
+
+  // Set the video URL (with autoplay enabled)
+  iframe.src = "https://youtu.be/gqt4Bg-VnU8";
+  
+  // Show the video container
+  videoContainer.style.display = 'block';
+  
+  // Scroll to the top of the page to show the video
+  // window.scrollTo({ top: 0, behavior: 'smooth' });
+});

@@ -109,6 +109,7 @@ body {
     color: green;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .write-up .animate-down .right-btn .play {
@@ -186,6 +187,22 @@ button {
     color: white;
 }
 
+#videoContainer {
+    display: none; /* Hide video initially */
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Center the video */
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+#videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /* about us section */
@@ -242,7 +259,7 @@ button {
 .about-us-container .right .about-us .line {
     flex-grow: 1;
     height: 1px;
-    background-color: green; /* Dark green color */
+    background-color: green;
     margin-left: 10px;
 }
 
@@ -352,6 +369,7 @@ button {
     align-items: center;
     height: 110vh;
     position: relative;
+    /* margin-top: 20vh; */
 }
 
 .let-us-help .image-container {
@@ -488,7 +506,7 @@ button {
     .about-us-container {
         display: block;
         padding: 0vh 0;
-        margin: 10vh auto;
+        margin: 10vh auto 5vh;
     }
 
     .about-us-container .left {
@@ -501,8 +519,8 @@ button {
     }
 
     .about-us-container .active {
-        position: absolute;
-        animation: from-right 1s 1;
+        position: relative;
+        animation: from-right 2s 1;
         right: 0vw;
         top: 100%;
     }
@@ -546,6 +564,30 @@ button {
         margin-top: 1vh;
     }
 
+    .let-us-help {
+        height: 50vh;
+    }
+
+    .let-us-help .image-container {
+        width: 50%;
+    }
+
+    .let-us-help .overlay {
+        height: 50vh;
+    }
+
+    .let-us-help .overlay .content-container {
+        width: 90%;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 40px;
+        line-height: 4.5vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 50%;
+    }
 
 }
 
@@ -677,6 +719,31 @@ button {
         0%{ width: 5vw; height: 5vh; opacity: 1;}
         100%{ width: 25vw; height: 20vh; opacity: 0;}
     }
+
+    .let-us-help {
+        height: 75vh;
+    }
+
+    .let-us-help .image-container {
+        width: 50%;
+    }
+
+    .let-us-help .overlay {
+        height: 75vh;
+    }
+
+    .let-us-help .overlay .content-container {
+        width: 90%;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 35px;
+        line-height: 6vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 80%;
+    }
     
 }
 
@@ -739,11 +806,11 @@ button {
         width: 100%;
     }
 
-    
-.about-us-container .right h1 {
-    margin: 3vh 0;
-    font-size: 34px;
-}
+        
+    .about-us-container .right h1 {
+        margin: 3vh 0;
+        font-size: 34px;
+    }
 
     .about-us-container .right p {
         line-height: 3.4vh;
@@ -798,8 +865,15 @@ button {
         font-size: 20px;
         color: orange;
     }
-    
-    
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 35px;
+        line-height: 5vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 90%;
+    }
 }
 
 
@@ -854,5 +928,26 @@ button {
         80% {bottom: 15vh;}
         100% {bottom: 15vh;}
     }
-    
+
+    .let-us-help {
+        height: 90vh;
+    }
+
+    .let-us-help .overlay {
+        height: 90vh;
+    }
+
+    .let-us-help .overlay .content-container {
+        width: 90%;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 35px;
+        line-height: 6vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 100%;
+    }
+
 }
