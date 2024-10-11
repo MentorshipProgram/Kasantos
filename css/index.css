@@ -1,0 +1,953 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.gradient-container {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(0, 10, 0), rgb(1, 58, 1), white);
+    position: relative;
+}
+
+.gradient-container .left {
+    width: 30%;
+    background-color: transparent;
+}
+
+.gradient-container .right {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: transparent;
+}
+
+ .gradient-container .right img {
+    width: 50%;
+}
+
+.write-up {
+    background-color: rgba(0, 0, 0, 0.244);
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    display: none;
+}
+
+
+.write-up .animate-up {
+    width: 60%;
+    margin-left: 5vw;
+    position: absolute;
+    animation: slidedown 4s infinite;
+}
+
+@keyframes slidedown {
+    0% {top: -30vh;}
+    80% {top: 20vh;}
+    100% {top: 20vh;}
+}
+
+.write-up .animate-up h3 {
+    color: orange;
+    margin-bottom: 3vh;
+}
+
+.write-up .animate-up h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 2vh;
+}
+
+.write-up .animate-up p {
+    color: white;
+    font-size: 20px;
+    line-height: 5vh;
+}
+
+.write-up .animate-down {
+    margin-left: 5vw;
+    width: 35%;
+    position: absolute;
+    animation: slideup 4s infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.write-up .animate-down a {
+    text-decoration: none;
+}
+
+.write-up .animate-down button {
+    padding: 20px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.write-up .animate-down .left-btn {
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+}
+
+.write-up .animate-down .left-btn:hover {
+    background-color: white;
+    color: green;
+}
+
+.write-up .animate-down .right-btn {
+    background-color: transparent;
+    color: green;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.write-up .animate-down .right-btn .play {
+    padding: 20px 23px;
+    border-radius: 60px;
+    background-color: white;
+    margin-right: 1vw;
+    position: relative;
+}
+
+.write-up .animate-down .right-btn .waves {
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.591);
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    animation: waves 1.5s infinite;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes waves {
+    0%{ width: 5vw; height: 10vh; opacity: 1;}
+    100%{ width: 15vw; height: 30vh; opacity: 0;}
+}
+
+@keyframes slideup {
+    0% {bottom: 0vh;}
+    80% {bottom: 10vh;}
+    100% {bottom: 10vh;}
+}
+
+#div1 {
+    display: block;
+}
+
+.button {
+    font-size: 18px;
+    padding: 20px 23px;
+    border: none;
+    border-radius: 80px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}  
+
+.alternating-buttons {
+    position: absolute;
+    bottom: 15vh;
+    right: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13vw;
+}
+
+.alternating-buttons h3 {
+    color: white;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+#videoContainer {
+    display: none; /* Hide video initially */
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Center the video */
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+#videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* about us section */
+
+.about-us-container {
+    width: 90%;
+    margin: 20vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20vh 0;
+    position: relative;
+}
+
+.about-us-container .left {
+    width: 47%;
+    border-radius: 5px;
+}
+
+.about-us-container .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.about-us-container .right {
+    width: 47%;
+}
+
+.about-us-container .active {
+    position: absolute;
+    animation: from-right 1s 1;
+    right: 0vw;
+    top: 0%;
+}
+
+@keyframes from-right {
+    0% {right: -10vw; color: white;}
+    100% {right: 0vw;}
+}
+
+.about-us-container .right .about-us {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.about-us-container .right .about-us > p {
+    margin: 0;
+    font-size: 20px;
+    color: green;
+}
+
+.about-us-container .right .about-us .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: green;
+    margin-left: 10px;
+}
+
+.about-us-container .right h1 {
+    margin: 3vh 0;
+    font-size: 45px;
+}
+
+.about-us-container .right h1 .diff {
+    color: orange;
+}
+
+.about-us-container .right p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.626);
+    line-height: 4.5vh;
+}
+
+.about-us-container .right .aims {
+    margin: 4vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-container .right .aims .mission {
+    width: 47%;
+}
+
+.about-us-container .right .aims .vission {
+    width: 47%;
+}
+
+.about-us-container .right .aims h3 {
+    margin-bottom: 2vh;
+}
+
+.about-us-container .right .about-banner {
+    height: 23vh;
+    border-radius: 10px;
+}
+
+.about-us-container .right .about-banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.about-us-container .right .bottom {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.about-us-container .right .bottom a {
+    text-decoration: none;
+}
+
+.about-us-container .right .bottom button {
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    padding: 20px 30px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.about-us-container .right .bottom button:hover {
+    background-color: green;
+    color: white;
+}
+
+.about-us-container .right .bottom .others {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.about-us-container .right .bottom .others i {
+    width: 30%;
+    color: green;
+    font-size: 50px;
+}
+
+.about-us-container .right .bottom .others .right {
+    width: 70%;
+    position: relative;
+}
+
+.about-us-container .right .bottom .others .right p {
+    font-size: 15px;
+    color: green;
+}
+
+.about-us-container .right .bottom .others .right span {
+    font-size: 20px;
+    color: orange;
+}
+
+.let-us-help {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    position: relative;
+    /* margin-top: 20vh; */
+}
+
+.let-us-help .image-container {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.let-us-help .image-container img {
+    width: 100%;
+}
+
+.let-us-help .overlay {
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.let-us-help .overlay .content-container {
+    width: 50%;
+    color: white;
+}
+
+.let-us-help .overlay .content-container h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.let-us-help .overlay .content-container .button-container {
+    width: 60%;
+    margin: 10vh auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.let-us-help .overlay .content-container .button-container button {
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+}
+
+.let-us-help .overlay .content-container .button-container .left-button {
+    background-color: orange;
+}
+
+.let-us-help .overlay .content-container .button-container .left-button:hover {
+    background-color: white;
+}
+
+.let-us-help .overlay .content-container .button-container .right-button {
+    background-color: white;
+}
+
+.let-us-help .overlay .content-container .button-container .right-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    .gradient-container {
+        height: 60vh;
+    }
+
+    .write-up {
+        height: 60vh;
+    }
+    
+    .write-up .animate-up {
+        width: 60%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        color: orange;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 20px;
+        line-height: 3vh;
+    }
+    
+    .write-up .animate-down {
+        width: 40%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 15vh;}
+        100% {bottom: 15vh;}
+    }
+
+    @keyframes waves {
+        0%{ width: 5vw; height: 5vh; opacity: 1;}
+        100%{ width: 15vw; height: 10vh; opacity: 0;}
+    }
+    
+    /* about-us section */
+
+    .about-us-container {
+        display: block;
+        padding: 0vh 0;
+        margin: 10vh auto 5vh;
+    }
+
+    .about-us-container .left {
+        width: 100%;
+    }
+
+    .about-us-container .right {
+        width: 90%;
+        margin: 5vh auto;
+    }
+
+    .about-us-container .active {
+        position: relative;
+        animation: from-right 2s 1;
+        right: 0vw;
+        top: 100%;
+    }
+    
+    @keyframes from-right {
+        0% {right: -20vw; color: white;}
+        100% {right: 0vw;}
+    }
+
+    .about-us-container .right p {
+        line-height: 2.5vh;
+        color: rgba(0, 0, 0, 0.856);
+    }
+
+    .about-us-container .right .aims {
+        display: block;
+    }
+
+    .about-us-container .right .aims .mission {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .about-us-container .right .aims .vission {
+        width: 100%;
+    }
+
+    .about-us-container .right .aims h3 {
+        margin-bottom: 0;
+    }
+
+    .about-us-container .right .about-banner {
+        height: 15vh;
+    }
+
+    .about-us-container .right .about-banner img {
+        object-fit: cover;
+    }
+
+    .about-us-container .right .bottom {
+        margin-top: 1vh;
+    }
+
+    .let-us-help {
+        height: 50vh;
+    }
+
+    .let-us-help .image-container {
+        width: 50%;
+    }
+
+    .let-us-help .overlay {
+        height: 50vh;
+    }
+
+    .let-us-help .overlay .content-container {
+        width: 90%;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 40px;
+        line-height: 4.5vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width:820px) {
+
+    .write-up .animate-down {
+        width: 50%;
+    }
+
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 10vh;}
+        100% {bottom: 10vh;}
+    }
+
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    .gradient-container {
+        height: 60vh;
+    }
+
+    .write-up {
+        height: 60vh;
+    }
+    
+    .write-up .animate-up {
+        width: 60%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        color: orange;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 20px;
+        line-height: 3vh;
+    }
+    
+    .write-up .animate-down {
+        width: 40%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 15vh;}
+        100% {bottom: 15vh;}
+    }
+    
+}
+
+
+@media screen and (max-width:540px) {
+
+    .gradient-container {
+        height: 100vh;
+    }
+
+    .write-up {
+        height: 100vh;
+    }
+    
+    .write-up .animate-up {
+        width: 90%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 20vh;}
+        100% {top: 20vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        color: orange;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 15px;
+        line-height: 3vh;
+    }
+    
+    .write-up .animate-down {
+        width: 70%;
+    }
+    
+
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 20vh;}
+        100% {bottom: 20vh;}
+    }
+
+    @keyframes waves {
+        0%{ width: 5vw; height: 5vh; opacity: 1;}
+        100%{ width: 25vw; height: 20vh; opacity: 0;}
+    }
+
+    .let-us-help {
+        height: 75vh;
+    }
+
+    .let-us-help .image-container {
+        width: 50%;
+    }
+
+    .let-us-help .overlay {
+        height: 75vh;
+    }
+
+    .let-us-help .overlay .content-container {
+        width: 90%;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 35px;
+        line-height: 6vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 80%;
+    }
+    
+}
+
+
+@media screen and (max-width:430px) {
+
+    .gradient-container {
+        height: 80vh;
+    }
+
+    .write-up {
+        height: 80vh;
+    }
+    
+    .write-up .animate-up {
+        width: 90%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 20px;
+        line-height: 3vh;
+    }
+    
+    .write-up .animate-down {
+        width: 90%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 20px 20px;
+
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 15vh;}
+        100% {bottom: 15vh;}
+    }
+
+    @keyframes waves {
+        0%{ width: 5vw; height: 5vh; opacity: 1;}
+        100%{ width: 30vw; height: 15vh; opacity: 0;}
+    }
+
+    .alternating-buttons {
+        display: none;
+    }
+
+    .about-us-container .right {
+        width: 100%;
+    }
+
+        
+    .about-us-container .right h1 {
+        margin: 3vh 0;
+        font-size: 34px;
+    }
+
+    .about-us-container .right p {
+        line-height: 3.4vh;
+    }
+
+    .about-us-container .right .about-banner {
+        height: 12vh;
+    }
+
+    .about-us-container .right .bottom {
+        width: 100%;
+    }
+
+    .about-us-container .right .bottom button {
+        border: none;
+        border-radius: 5px;
+        background-color: orange;
+        color: black;
+        padding: 20px 20px;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+    
+    .about-us-container .right .bottom button:hover {
+        background-color: green;
+        color: white;
+    }
+    
+    .about-us-container .right .bottom .others {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+    }
+    
+    .about-us-container .right .bottom .others i {
+        width: 30%;
+        color: green;
+        font-size: 50px;
+    }
+    
+    .about-us-container .right .bottom .others .right {
+        width: 70%;
+    }
+    
+    .about-us-container .right .bottom .others .right p {
+        font-size: 15px;
+        color: green;
+    }
+    
+    .about-us-container .right .bottom .others .right span {
+        font-size: 20px;
+        color: orange;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 35px;
+        line-height: 5vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width:390px) {
+
+    .gradient-container {
+        height: 90vh;
+    }
+
+    .write-up {
+        height: 90vh;
+    }
+    
+    .write-up .animate-up {
+        width: 90%;
+    }
+    
+    @keyframes slidedown {
+        0% {top: -10vh;}
+        80% {top: 10vh;}
+        100% {top: 10vh;}
+    }
+    
+    .write-up .animate-up h3 {
+        margin-bottom: 1vh;
+    }
+
+    .write-up .animate-up h1 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 1vh;
+    }
+    
+    .write-up .animate-up p {
+        font-size: 15px;
+        line-height: 3vh;
+    }
+    
+    .write-up .animate-down {
+        width: 95%;
+    }
+    
+    
+    .write-up .animate-down button {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    
+    @keyframes slideup {
+        0% {bottom: 0vh;}
+        80% {bottom: 15vh;}
+        100% {bottom: 15vh;}
+    }
+
+    .let-us-help {
+        height: 90vh;
+    }
+
+    .let-us-help .overlay {
+        height: 90vh;
+    }
+
+    .let-us-help .overlay .content-container {
+        width: 90%;
+    }
+
+    .let-us-help .overlay .content-container h1 {
+        font-size: 35px;
+        line-height: 6vh;
+    }
+
+    .let-us-help .overlay .content-container .button-container {
+        width: 100%;
+    }
+
+}
