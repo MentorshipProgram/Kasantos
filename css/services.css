@@ -54,6 +54,7 @@
 }
 .services-section .services .we-offer h1{
     font-weight: 650;
+    width: 90%;
 }
 .services-section .services .we-offer button{
     margin-top: 15px;
@@ -69,6 +70,7 @@
 }
 .services-section .services .service-icons .fa{
     font-size: 22px;
+    color: rgb(24, 116, 24);
 }
 .services-section .services .service-icons .fa-arrow-up{
     color: white;
@@ -85,4 +87,25 @@
 .services-section .services .service:hover .service-icons .fa-arrow-up{
     background-color: orange;
     transition:all 0.2s ease-in-out !important;
+}
+.services-section .services .service:hover .service-icons .fa{
+    color: white;
+    transition:all 0.2s ease-in-out !important;
+}
+
+/* media query */
+@media screen and (max-width: 768px){
+    .services-section .services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+@media screen and (max-width: 820px){
+    .services-section .services{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+.services-section .services .we-offer img{
+    left: 150px;
+    width: 360px;
 }

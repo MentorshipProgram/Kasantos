@@ -94,19 +94,19 @@ body {
 }
 
 .write-up .animate-down .left-btn {
-    background-color: green;
+    background-color: rgb(0, 80, 27);
     color: white;
     border-radius: 7px;
 }
 
 .write-up .animate-down .left-btn:hover {
     background-color: white;
-    color: green;
+    color: rgb(0, 80, 27);
 }
 
 .write-up .animate-down .right-btn {
     background-color: transparent;
-    color: green;
+    color: rgb(0, 80, 27);
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -182,8 +182,8 @@ button {
     background-color: orange;
 }
 
-.green {
-    background-color: green;
+.rgb(0, 80, 27) {
+    background-color: rgb(0, 80, 27);
     color: white;
 }
 
@@ -253,13 +253,13 @@ button {
 .about-us-container .right .about-us > p {
     margin: 0;
     font-size: 20px;
-    color: green;
+    color: rgb(0, 80, 27);
 }
 
 .about-us-container .right .about-us .line {
     flex-grow: 1;
     height: 1px;
-    background-color: green;
+    background-color: rgb(0, 80, 27);
     margin-left: 10px;
 }
 
@@ -330,7 +330,7 @@ button {
 }
 
 .about-us-container .right .bottom button:hover {
-    background-color: green;
+    background-color: rgb(0, 80, 27);
     color: white;
 }
 
@@ -343,7 +343,7 @@ button {
 
 .about-us-container .right .bottom .others i {
     width: 30%;
-    color: green;
+    color: rgb(0, 80, 27);
     font-size: 50px;
 }
 
@@ -354,7 +354,7 @@ button {
 
 .about-us-container .right .bottom .others .right p {
     font-size: 15px;
-    color: green;
+    color: rgb(0, 80, 27);
 }
 
 .about-us-container .right .bottom .others .right span {
@@ -363,7 +363,7 @@ button {
 }
 
 .let-us-help {
-    background-color: green;
+    background-color: rgb(0, 80, 27);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -835,7 +835,7 @@ button {
     }
     
     .about-us-container .right .bottom button:hover {
-        background-color: green;
+        background-color: rgb(0, 80, 27);
         color: white;
     }
     
@@ -848,7 +848,7 @@ button {
     
     .about-us-container .right .bottom .others i {
         width: 30%;
-        color: green;
+        color: rgb(0, 80, 27);
         font-size: 50px;
     }
     
@@ -858,7 +858,7 @@ button {
     
     .about-us-container .right .bottom .others .right p {
         font-size: 15px;
-        color: green;
+        color: rgb(0, 80, 27);
     }
     
     .about-us-container .right .bottom .others .right span {
