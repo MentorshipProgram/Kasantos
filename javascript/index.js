@@ -61,16 +61,31 @@ document.addEventListener("scroll", function() {
 
 // youtube video
 
-document.getElementById('playButton').addEventListener('click', function() {
-  var videoContainer = document.getElementById('videoContainer');
-  var iframe = document.getElementById('youtubeVideo');
+  // Get the link, video container, and iframe
+  const videoContainer = document.getElementById('video-container');
+        const videoIframe = document.getElementById('video-iframe');
+        const closeBtn = document.getElementById('close-btn');
 
-  // Set the video URL (with autoplay enabled)
-  iframe.src = "https://youtu.be/gqt4Bg-VnU8";
-  
-  // Show the video container
-  videoContainer.style.display = 'block';
-  
-  // Scroll to the top of the page to show the video
-  // window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+        // Function to handle the video play event
+        function playVideo(event) {
+            event.preventDefault();  // Prevent the link from navigating
+
+            const videoId = this.getAttribute('data-video-id');  // Get the video ID from data attribute
+            // const youtubeVideoURL = `https://www.youtube.com/embed/${videoId}?autoplay=1`;  // Create YouTube URL
+            const youtubeVideoURL = `https://www.youtube.com/watch?v=gqt4Bg-VnU8`;  // Create YouTube URL
+
+            videoIframe.src = youtubeVideoURL;  // Set the video URL to iframe
+            videoContainer.style.display = 'flex';  // Show the video container
+        }
+
+        // Get all video links and attach event listeners
+        const videoLinks = document.querySelectorAll('.play-video-link');
+        videoLinks.forEach(function(link) {
+            link.addEventListener('click', playVideo);
+        });
+
+        // Close the video when the close button is clicked
+        closeBtn.addEventListener('click', function() {
+            videoContainer.style.display = 'none';  // Hide the video container
+            videoIframe.src = '';  // Stop the video by clearing the src
+        });
