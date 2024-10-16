@@ -63,29 +63,54 @@ document.addEventListener("scroll", function() {
 
   // Get the link, video container, and iframe
   const videoContainer = document.getElementById('video-container');
-        const videoIframe = document.getElementById('video-iframe');
-        const closeBtn = document.getElementById('close-btn');
+    const videoIframe = document.getElementById('video-iframe');
+    const closeBtn = document.getElementById('close-btn');
 
-        // Function to handle the video play event
-        function playVideo(event) {
-            event.preventDefault();  // Prevent the link from navigating
+    // Function to handle the video play event
+    function playVideo(event) {
+        event.preventDefault();  // Prevent the link from navigating
 
-            const videoId = this.getAttribute('data-video-id');  // Get the video ID from data attribute
-            // const youtubeVideoURL = `https://www.youtube.com/embed/${videoId}?autoplay=1`;  // Create YouTube URL
-            const youtubeVideoURL = `https://www.youtube.com/watch?v=gqt4Bg-VnU8`;  // Create YouTube URL
+        const videoId = this.getAttribute('data-video-id');  // Get the video ID from data attribute
+        // const youtubeVideoURL = `https://www.youtube.com/embed/${videoId}?autoplay=1`;  // Create YouTube URL
+        const youtubeVideoURL = `https://www.youtube.com/watch?v=gqt4Bg-VnU8`;  // Create YouTube URL
 
-            videoIframe.src = youtubeVideoURL;  // Set the video URL to iframe
-            videoContainer.style.display = 'flex';  // Show the video container
-        }
+        videoIframe.src = youtubeVideoURL;  // Set the video URL to iframe
+        videoContainer.style.display = 'flex';  // Show the video container
+    }
 
-        // Get all video links and attach event listeners
-        const videoLinks = document.querySelectorAll('.play-video-link');
-        videoLinks.forEach(function(link) {
-            link.addEventListener('click', playVideo);
-        });
+    // Get all video links and attach event listeners
+    const videoLinks = document.querySelectorAll('.play-video-link');
+    videoLinks.forEach(function(link) {
+        link.addEventListener('click', playVideo);
+    });
 
-        // Close the video when the close button is clicked
-        closeBtn.addEventListener('click', function() {
-            videoContainer.style.display = 'none';  // Hide the video container
-            videoIframe.src = '';  // Stop the video by clearing the src
-        });
+    // Close the video when the close button is clicked
+    closeBtn.addEventListener('click', function() {
+        videoContainer.style.display = 'none';  // Hide the video container
+        videoIframe.src = '';  // Stop the video by clearing the src
+    });
+
+
+
+
+// Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 200px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}  

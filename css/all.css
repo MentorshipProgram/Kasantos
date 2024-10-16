@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Basic styling for the scroll to top button */
+#scrollToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    z-index: 10;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 3vh 1.8vw;
+    border-radius: 40px;
+    animation: slideup 1s linear 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes slideup {
+    0% {bottom: -5%;}
+    100% {bottom: 10%;}
+}
+
+
+@media screen and (max-width:1024px) {
+
+    #scrollToTopBtn {
+        bottom: 2%;
+        right: 5%;
+        padding: 2vh 3.5vw;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    #scrollToTopBtn {
+        bottom: 2%;
+        right: 5%;
+        padding: 2vh 6vw;
+    }
+}
