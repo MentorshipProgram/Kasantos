@@ -91,26 +91,37 @@ document.addEventListener("scroll", function() {
     });
 
 
+const slides = document.querySelector('.slides');
+let currentSlide = 0;
+const totalSlides = document.querySelectorAll('.slide').length;
 
+const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
 
-// Get the button
-let mybutton = document.getElementById("scrollToTopBtn");
-
-// When the user scrolls down 200px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+// Function to show the slide
+function showSlide(index) {
+    const slideWidth = 100; // Percentage width of each slide
+    slides.style.transform = `translateX(-${index * slideWidth}%)`;
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}  
+// Function to show the next slide
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Function to show the previous slide
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Event listeners for navigation buttons
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Initialize the first slide as active
+showSlide(currentSlide);

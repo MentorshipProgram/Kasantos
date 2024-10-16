@@ -1,7 +1,42 @@
-* {
-    padding: 0;
-    margin: 0;
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.ripple {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: ripple 0.8s infinite ease-out;
+    opacity: 1;
+}
+
+
+@keyframes ripple {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+  
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
+}
+
 
 /* Basic styling for the scroll to top button */
 #scrollToTopBtn {

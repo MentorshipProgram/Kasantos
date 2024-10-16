@@ -964,3 +964,232 @@ button {
     }
 
 }
+
+/* Testimonial section */
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15vh auto 0;
+}
+
+.testimonial .testimonial-image {
+    height: 85vh;
+    width: 30vw;
+    border-radius: 200px 10px 10px 10px;
+}
+
+.testimonial .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 200px 10px 10px 10px;
+}
+
+.testimonial-content {
+    width: 40vw;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(219, 234, 219);
+    padding: 10vh 5vw;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* 100% per slide times the number of slides */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide h4 {
+    width: 33%;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.slide h3 {
+    font-weight: bolder;
+}
+
+.slide .flexed {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.slide .flexed i {
+    color: rgb(241, 240, 240);
+    font-size: 120px;
+}
+
+.testimonial .testimonial-navigation {
+    width: 10vw;
+}
+
+.testimonial .testimonial-navigation button {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: green;
+    color: white;
+    height: 11vh;
+    width: 11vh;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.testimonial .testimonial-navigation button:hover {
+    background-color: orange;
+    color: black;
+}
+
+.testimonial .testimonial-navigation #next-btn {
+    margin-top: 4vh;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .testimonial {
+        display: block;
+    }
+
+    .testimonial .testimonial-image {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    .testimonial .testimonial-navigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    .testimonial .testimonial-image {
+        height: 60vh;
+    }
+}
+
+/* end of Testimonial section */
+
+
+/* sticker section */
+
+    .sticker {
+        background-color: green;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35vh;
+        margin: 10vh 0;
+    }
+
+    .sticker .left {
+        width: 30%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+    .sticker .left img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sticker h4 {
+        color: white;
+        width: 35%;
+        margin: auto;
+        font-weight: bolder;
+    }
+
+    .sticker a {
+        color: black;
+        background-color: orange;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 20px 35px;
+        font-weight: bolder;
+        margin-right: 4vw;
+    }
+
+    .sticker .right a:hover {
+        color: black;
+        background-color: white;
+    }
+
+
+    @media screen and (max-width:1024px) {
+
+        .sticker {
+            height: 15vh;
+            margin: 5vh 0;
+        }
+
+        .sticker .left {
+            display: none;
+        }
+
+        .sticker h4 {
+            width: 60%;
+            font-size: 37px;
+        }
+    }
+
+
+    @media screen and (max-width:430px) {
+
+        .sticker {
+            display: block;
+            height: fit-content;
+            margin: 5vh 0;
+            padding: 5vh 0;
+        }
+
+        .sticker h4 {
+            width: 80%;
+            font-size: 34px;
+        }
+
+        .sticker a {
+            display: block;
+            width: 37%;
+            margin: 3vh 0 0 12vw;
+            border-radius: 10px;
+        }
+    }
+
+
+    @media screen and (max-width:390px) {
+
+        .sticker h4 {
+            width: 80%;
+            font-size: 30px;
+        }
+
+        .sticker a {
+            display: block;
+            width: 43%;
+            margin: 3vh 0 0 12vw;
+            border-radius: 10px;
+        }
+    }
+
+/* end of sticker section */
