@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*****_HERO SECTION_*****/
+
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 124px;
+    padding-bottom: 140px;
+    z-index: 1;
+    height: 80vh;
+    width: 100%;
+    background-color: gainsboro;
+    background: linear-gradient(90deg, #021609 0%, rgba(2, 22, 9, 0.6) 45.5%, rgba(2, 22, 9, 0.3) 69%, rgba(2, 22, 9, 0) 100%);
+}
+
+@media only screen and (min-width: 345px) and (max-width: 991px), (max-width: 767x) {
+    .background {
+      overflow: hidden;
+      height: auto;
+    }
+  }
+
+.background .name-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2%;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .background .name-text {
+      display: none;
+    }
+  }
+  .background .text {
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    rotate: 90deg;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  }
+
+.background img{
+    height: 30vh;
+    position: relative;
+    left: 57%;
+    bottom: 30%;
+}
+
+@media only screen and (min-width: 345px) and (max-width: 991px), (max-width: 767x) {
+    .background img {
+      position: relative;
+      left: 32%;
+    }
+  }
+
+.background .hero-section {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 58%;
+}
+
+@media only screen and (min-width: 345px) and (max-width: 991px), (max-width: 767x) {
+    .background .hero-section {
+     font-size: 20px;
+     position: absolute;
+     bottom: 55%;
+     left: 30%;
+    }
+  }
+
+.title {
+    font-weight: bolder;
+    color: white;
+}
+
+.sub-title {
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .sub-title {
+      font-size: 18px;
+    }
+  }
+
+
+.sub-title span {
+    color: goldenrod;
+}
+
+/*****_END OF HERO SECTION_*****/
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 68px 0;
+    width: 100%;
+}
+@media only screen and (min-width: 267px) and (max-width: 991px), (max-width: 767px) {
+    .flex {
+    display: block;
+    width: 100%;
+    /* padding: 30px; */
+    }
+  }
+
+.flex-one {
+    width: 48%;
+    height: auto;
+}
+
+.flex-one .heading-section {
+    margin-right: 20px;
+}
+
+.flex-one .heading {
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    border-bottom: 1px solid  rgba(90, 90, 90, 0.2);
+    line-height: 100px;
+    width: 80%;
+    margin-left: 52px;
+}
+
+@media only screen and (min-width: 345px) and (max-width: 991px), (max-width: 767px) {
+    .flex-one .heading {
+    width: 100%;
+
+    /* padding: 30px; */
+    }
+  }
+
+/*****_FORM_*****/
+
+.contact-input input {
+    width: 92%;
+    line-height: 58px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 345px) and (max-width: 991px), (max-width: 767px) {
+   .contact-input input {
+    width: 100%;
+    }
+  }
+
+.contact-input input[type=text] {
+    padding: 0px 30px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.contact-input input[type=email] {
+    padding: 0px 30px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.contact-input input[type=textarea] {
+    padding: 0px 30px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+  } 
+
+.btn {
+    background-color: darkgreen;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/*****_CONTACT INFO SECTION_*****/
+
+.contact-info .top {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: darkgreen;
+}
+
+.contact-links a {
+    color: gray;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-links a span {
+    margin-left: 10px;
+}
+
+.contact-links a span .second {
+    margin-left: 30px;
+}
+
+.flex-two {
+    width: 48%;
+}
+
+.flex-two .map iframe {
+    height: 800px;
+    width: 100%;
+}
