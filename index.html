@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="font-6/css/all.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Trimax.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/contact-section.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/preloader.css">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="ripple"></div>
+    </div>
+
 
     <div class="gradient-container">
         <div class="left"></div>
@@ -28,7 +34,7 @@
                 <p>Join us in promoting a greener future</p>    
             </div>
             <div class="animate-down">
-                <a href=""><button class="left-btn">Discover More</button></a>
+                <a href="about-us.html"><button class="left-btn">Discover More</button></a>
                 <a href="#" class="play-video-link" data-video-id="VIDEO_ID_1"><button id="playButton" class="right-btn"><i class="fa-solid fa-play play">
                     <div class="waves"></div>
                 </i>How it Work</button></a>
@@ -45,7 +51,7 @@
                 </p>
             </div>
             <div class="animate-down">
-                <a href=""><button class="left-btn">Discover More</button></a>
+                <a href="about-us.html"><button class="left-btn">Discover More</button></a>
                 <a href="#" class="play-video-link" data-video-id="VIDEO_ID_2"><button id="playButton" class="right-btn"><i class="fa-solid fa-play play">
                     <div class="waves"></div>
                 </i>How it Work</button></a>
@@ -62,7 +68,7 @@
                 </p>
             </div>
             <div class="animate-down">
-                <a href=""><button class="left-btn">Discover More</button></a>
+                <a href="about-us.html"><button class="left-btn">Discover More</button></a>
                 <a href="#" class="play-video-link" data-video-id="VIDEO_ID_3"><button id="playButton" class="right-btn"><i class="fa-solid fa-play play">
                     <div class="waves"></div>
                 </i>How it Work</button></a>
@@ -124,7 +130,7 @@
             </div>
 
             <div class="bottom">
-                <a href=""><button>Read More</button></a>
+                <a href="services.html"><button>Read More</button></a>
                 <div class="others">
                     <i class="fa-regular fa-comment-dots"></i>
                     <div class="right">
@@ -137,7 +143,7 @@
         </div>
     </div>
 
-    <!-- <div class="services-section py-5">
+    <div class="services-section py-5">
         <div class="services container">
             <div class="we-offer">
                 <div class="service-title">
@@ -194,7 +200,7 @@
                 <img src="images/environmental.jpg" alt="">
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="let-us-help">
         <div class="image-container">
@@ -204,12 +210,57 @@
             <div class="content-container">
                 <h1>Let Us Help You Manage Waste Efficiently, Ensuring Compliance With Environmental Standards</h1>
                 <div class="button-container">
-                    <button class="left-button">Contact Us</button>
-                    <button class="right-button">Discover More</button>
+                    <a href="contact-us.html"><button class="left-button">Contact Us</button></a>
+                    <a href="about-us.html"><button class="right-button">Discover More</button></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="testimonial">
+        <div class="testimonial-image">
+            <img src="images/test.jpg" alt="Testimonial Image">
+        </div>
+        <div class="testimonial-content">
+            <div class="slides">
+                <div class="slide">
+                    <h4>“Kasantos Resources Nigeria has transformed the way we handle waste in our company. Their recycling services have helped us reduce waste and save costs. We appreciate their professionalism and dedication to sustainability”</h4>
+                    <div class="flexed">
+                        <h3>John Adeyemi</h3>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <h4>“We rely on Kasantos Resources Nigeria for the safe disposal of our medical waste. Their team is highly trained, reliable, and always adheres to the highest safety standards. I would highly recommend their services to any healthcare provider.”</h4>
+                    <div class="flexed">
+                        <h3>Dr. Chika Okoro</h3>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <h4>“Kasantos Resources Nigeria has been instrumental in helping us manage our industrial waste. Their customized solutions have ensured that we remain compliant with environmental regulations while reducing our overall waste output. A great partner in waste management!”</h4>
+                    <div class="flexed">
+                        <h3>Musa Ibrahim</h3>
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-navigation">
+            <button id="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    
+
+    <div class="sticker">
+        <div class="left"><img src="images/cta.jpg" alt=""></div>
+        <h4>24/7 Customer Support Any Time Of The Day Or Night </h4>
+        <a href="contact-us.html">Contact Us</a>
+    </div>
+
 
     <div class="contact-section container">
         <div class="contact p-5 container">
@@ -235,6 +286,7 @@
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/index.js"></script>
+    <script src="javascript/Preloader.js"></script>
         
 </body>
 </html>

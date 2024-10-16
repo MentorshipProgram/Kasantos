@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Services</title>
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="font-6/css/all.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/preloader.css">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="ripple"></div>
+    </div>
+
     <div class="services-section py-5">
         <div class="services container">
             <div class="we-offer">
@@ -67,5 +74,10 @@
             </div>
         </div>
     </div>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/Preloader.js"></script>
 </body>
 </html>
