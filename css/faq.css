@@ -136,3 +136,9 @@
 .first-div .secound-div .div2 .div1:hover {
     transform: scale(1.1);
 } */
+
+@media screen and (max-width: 1023px) {
+    .first-div .secound-div{
+        display: block;
+    }
+}

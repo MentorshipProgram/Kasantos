@@ -32,7 +32,7 @@
 
 
 
-    // JavaScript
+    // JavaScript for cursor circle
     document.addEventListener('mousemove', (event) => {
         const circle = document.getElementById('cursor-circle');
         circle.style.left = `${event.clientX}px`;
