@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/contact-section.css">
     <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/contact_us.css">
 
 </head>
 <body>
@@ -17,29 +19,59 @@
         <div class="ripple"></div>
     </div>
 
-    <div class="contact-section container">
-        <div class="contact p-5 container">
-            <p>CONTACT</p>
-            <h1>Send Us A Message</h1>
-            <form action="" class="contact-form">
-                <input type="text" placeholder="First Name:">
-                <input type="text" placeholder="Phone:">
-                <input type="text" placeholder="Address:">
-                <input type="text" placeholder="Last Name:">
-                <input type="text" placeholder="Email:">
-                <input type="text" placeholder="Zip Code">
-                <input type="text" placeholder="Write Message..." class="message">
-            </form>
-            <button class="btn py-3 px-4 mt-4">Send A Message</button>
-        </div>
-        <div class="contact-img">
-            <img src="images/contact.jpg" alt="" class="img-fluid">
+    
+    <div class="section-two container mt-5">
+        <div class="flex">
+            <div class="flex-one bg-alert alert-success container">
+                <h3 class="heading mt-4">Get In Touch</h3>
+                <form action="#">
+                    <div class="col-md-12 pl-5 mt-5 form-group contact-input">
+                    <input type="text" placeholder="Full Name *" required="">
+                    </div>
+                    <div class="col-md-12 pl-5 form-group contact-input">
+                    <input type="text" placeholder="Phone *" required="">
+                    </div>
+                    <div class="col-md-12 pl-5 form-group contact-input">
+                    <input type="email" placeholder="Email *" required="">
+                    </div>
+                    <div class="col-md-12 pl-5 form-group contact-input mb-30">
+                    <input type="textarea" placeholder="Note" required="">
+                    </div>
+                    <div class="col-md-12 pl-5 mt-4 contact-button">
+                    <button class="btn" type="submit">Send A Message</button>
+                    </div>
+                </form> 
+
+                <div class="contact-info col-md-12 pl-5 mt-5">
+                    <h3 class="top">Contact info:</h3>
+                    <div class="contact-links">
+                        <a href="tel:2348066158613">
+                            <i class="fa-solid fa-phone-volume"></i> <span>0806 615 8613</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot"></i> <span>Street/Adaelu Rd,Osisioma Ind. Layout,Aba. Abia <span class="second">State. Nigeria</span></span>
+                        </a>
+                        <a href="mailto:info@kasantos.com.ng">
+                            <i class="fa-solid fa-envelope-open-text"></i> <span>info@kasantos.com.ng</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="flex-two">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d350184.3983499637!2d7.286950963253729!3d5.151280201789308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104299308f30fbf3%3A0x98345ebf0c8cbca1!2sAba%2C%20Abia!5e0!3m2!1sen!2sng!4v1728939908385!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 
     <button id="scrollToTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./JS/jquery-3.2.1.min.js"></script>  
+    <script src="./JS/bootstrap.js"></script> 
+    <script src="./JAVASCRIPT/script.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/Preloader.js"></script>
 </body>
 </html>
