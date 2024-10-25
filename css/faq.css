@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-div{
+    padding-top: 10mm;
+    height: auto;
+    width: 100%;
+}
+
+.first-div .secound-div{
+    height: 154mm;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first-div .secound-div .div1{
+    width: 100%;
+}
+
+
+.first-div .secound-div .div1 .div1-content{
+    /* height: 154mm; */
+    width: 96%;
+    background-color: white;
+    margin: auto;
+    padding-top: 1mm;
+}
+
+.first-div .secound-div .div1 .div1-content .span1{
+    padding-right: 32mm;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    position: relative;
+}
+
+.first-div .secound-div .div1 .div1-content .span1 .custom-line{
+    border: none;
+    height: 1.5px; 
+    background-color: orange; 
+    width: 70%; 
+    position: absolute;
+    right: 0;
+    top: 0.1mm;
+}
+
+.first-div .secound-div .div1 .div1-content h1{
+    margin-top: 5mm;
+    font-size: 48px;
+    margin-bottom: 13mm;
+}
+
+.first-div .secound-div .div1 .div1-content div div div .accordion-button-custom{
+    padding-top: 8mm;
+    padding-bottom: 8mm;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #0e7a31; 
+    color: white;
+}
+
+.first-div .secound-div .div1 .div1-content div div div .bt2{
+    background-color: #f3faf6;
+}
+
+.green-bg {
+    background-color: #f3faf6 !important;
+    color: #000 !important;
+}
+
+.buttons-bg {
+    background-color: #0e7a31 !important;
+    color: white !important;
+}
+
+.icon {
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.icon.toggled {
+    content: "-"; 
+}
+
+.first-div .secound-div .div2{
+    padding-top: 12mm;
+    height: 154mm; 
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.first-div .secound-div .div2 .div1{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+}
+
+.first-div .secound-div .div2 .div1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures image scales while maintaining aspect ratio */
+    transition: transform 1s ease-in-out;
+}
+
+.first-div .secound-div .div2 .div1:hover img{
+    transform: scale(1.1);
+}
+
+/* .first-div .secound-div .div2{
+    padding-top: 12mm;
+    height: 154mm; 
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.first-div .secound-div .div2 .div1{
+    height: 100%;
+    width: 100%;  
+    margin: auto;
+    background: url(./faq.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s ease-in-out;
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.first-div .secound-div .div2 .div1:hover {
+    transform: scale(1.1);
+} */
+
+@media screen and (max-width: 1023px) {
+    .first-div .secound-div{
+        display: block;
+    }
+}

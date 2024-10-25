@@ -2,8 +2,6 @@ window.onload = function() {
     const divs = ['div1', 'div2', 'div3'];
     let currentIndex = 0;
     let intervalId;
-
-      // Debug: Check if script is running
   
     // Function to show a specific div
     function showDiv(index) {
