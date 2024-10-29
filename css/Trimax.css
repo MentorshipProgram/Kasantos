@@ -50,7 +50,7 @@ body {
 }
 
 @keyframes slidedown {
-    0% {top: -30vh;}
+    0% {top: 0vh;}
     80% {top: 20vh;}
     100% {top: 20vh;}
 }
@@ -472,7 +472,7 @@ button {
     }
     
     @keyframes slidedown {
-        0% {top: -10vh;}
+        0% {top: 0vh;}
         80% {top: 10vh;}
         100% {top: 10vh;}
     }
@@ -636,7 +636,7 @@ button {
     }
     
     @keyframes slidedown {
-        0% {top: -10vh;}
+        0% {top: 0vh;}
         80% {top: 10vh;}
         100% {top: 10vh;}
     }
@@ -691,7 +691,7 @@ button {
     }
     
     @keyframes slidedown {
-        0% {top: -10vh;}
+        0% {top: 0vh;}
         80% {top: 20vh;}
         100% {top: 20vh;}
     }
@@ -776,7 +776,7 @@ button {
     }
     
     @keyframes slidedown {
-        0% {top: -10vh;}
+        0% {top: 0vh;}
         80% {top: 10vh;}
         100% {top: 10vh;}
     }
@@ -906,7 +906,7 @@ button {
     }
     
     @keyframes slidedown {
-        0% {top: -10vh;}
+        0% {top: 0vh;}
         80% {top: 10vh;}
         100% {top: 10vh;}
     }

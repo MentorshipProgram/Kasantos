@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-top {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+    transition: max-height 0.3s ease;
+}
+
+.nav-top .left {
+    margin-left: 5vw;
+}
+
+.nav-top .left a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1vw;
+}
+
+.nav-top .left a .orange-icon {
+    color: orange;
+    margin-right: 1vw;
+}
+
+.nav-top .right {
+    background-color: green;
+    width: 11%;
+    padding-left: 4vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-top .right .white-icon {
+    color: white;
+}
+
+.main-nav {
+    background-color: white;
+    display: flex;
+    height: 15vh;
+    position: relative;
+    transition: position 0.3s, top 0.3s; /* Smooth transition */
+}
+
+.fixed-navbar {
+    position: fixed; /* Make it fixed when it reaches the threshold */
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    animation: slide-down 0.5s 1 linear;
+  }
+
+  @keyframes slide-down {
+    from {
+        top: -10vh;
+    }
+    100% {
+        top: 0vh;
+    }
+  }
+
+.main-nav .logo-container {
+    background-color: green;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    padding-left: 2.5vw;
+    width: 28%;
+}
+
+.main-nav .logo-container img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.main-nav .links-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 71%;
+}
+
+.main-nav .links-container .nav-links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 2vw;
+    font-size: 16px;
+}
+
+.main-nav .links-container .nav-links a:hover {
+    color: green;
+}
+
+.main-nav .links-container .right-links {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav .links-container .right-links a button {
+    border: none;
+    background-color: green;
+    padding: 15px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main-nav .links-container .right-links a button:hover {
+    background-color: black;
+}
+
+.main-nav .links-container .right-links .black-icon {
+    font-size: 25px;
+    color: black;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav .mobile-navbar {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        position: relative;
+        transition: position 0.3s, top 0.3s; /* Smooth transition */
+    }
+
+    .fixed-navbar-mobile {
+        position: fixed; /* Make it fixed when it reaches the threshold */
+        top: 0; 
+        left: 0;
+        right: 0;
+        z-index: 1000; 
+        animation: slide-down 0.5s 1 linear;
+    }
+
+    @keyframes slide-down {
+        from {
+            top: -10vh;
+        }
+        100% {
+            top: 0vh;
+        }
+    }
+    
+    .mobile-nav .mobile-navbar .logo-container {
+        background-color: green;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        padding-left: 2.5vw;
+        width: 50%;
+    }
+
+    .mobile-nav .mobile-navbar .logo-container img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+    .mobile-nav .mobile-navbar .drop-button {
+        width: 20%;
+        display: flex;
+    }
+
+}
