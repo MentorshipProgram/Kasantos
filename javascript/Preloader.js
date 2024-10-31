@@ -26,6 +26,7 @@ document.addEventListener('mousemove', (event) => {
 let navbar = document.getElementById("navbar");
 let navbar2 = document.getElementById("navbar2");
 let threshold = 800; // The height at which the navbar will become fixed
+let threshold2 = 500; // The height at which the navbar will become fixed
 
 // Consolidated scroll function
 window.onscroll = function() {
@@ -37,7 +38,7 @@ window.onscroll = function() {
     }
 
     // Navbar fixed position handling
-    if (window.pageYOffset > threshold) {
+    if (window.pageYOffset > threshold2) {
         navbar.classList.add("fixed-navbar"); // Add class to make navbar fixed
         navbar2.classList.add("fixed-navbar2"); // Add class to make navbar2 fixed
     } else {

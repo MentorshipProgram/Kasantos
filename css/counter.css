@@ -1,0 +1,40 @@
+        /* General Styles */
+
+        .counter-section {
+            background-color: #1e7d3e;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 20vh 0;
+            width: 100%;
+            overflow: hidden;
+            /* max-width: 1000px; */
+        }
+
+        .counter {
+            text-align: center;
+            flex: 1;
+            border-right: 1px solid white;
+        }
+
+        .counter h2 {
+            font-size: 50px;
+            font-weight: bolder;
+            margin: 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+            transition-delay: 0.2s;
+        }
+
+        .counter p {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .counter-section {
+                flex-direction: column;
+            }
+        }
