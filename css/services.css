@@ -20,6 +20,25 @@
 .services-section .services div{
     border-radius: 10px;
 }
+/* .services-section .services .waste{
+    background-color: white;
+}
+.services-section .services .waste:hover{
+    background-color: rgb(24, 116, 24);
+    color: white;
+} */
+.services-section .services .service{
+    background-color: white;
+}
+/* .services-section .services .hazard{
+    background-color: white;
+}
+.services-section .services .medical{
+    background-color: white;
+}
+.services-section .services .environmental{
+    background-color: white;
+} */
 .services-section .services .we-offer{
     color: white;
 }
@@ -27,7 +46,7 @@
     color: orange;
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 45%;
     font-size: 20px;
 }
 .services-section .services .we-offer img{
@@ -48,13 +67,12 @@
 .services-section .services .we-offer .service-title .line{
     background-color: orange;
     height: 1px;
-    width: 80px;
+    width: 100px;
     margin-left: 10px;
-    margin-top: -15px;
+    margin-top: 5px;
 }
 .services-section .services .we-offer h1{
     font-weight: 650;
-    width: 90%;
 }
 .services-section .services .we-offer button{
     margin-top: 15px;
@@ -70,7 +88,6 @@
 }
 .services-section .services .service-icons .fa{
     font-size: 22px;
-    color: rgb(24, 116, 24);
 }
 .services-section .services .service-icons .fa-arrow-up{
     color: white;
@@ -80,32 +97,46 @@
     transform: rotate(45deg);
 }
 .services-section .services .service:hover{
-    background-color: rgb(24, 116, 24) !important;
-    transition:all 0.2s ease-in-out !important;
+    background-color: rgb(24, 116, 24);
+    transition:all 0.2s ease-in-out;
     color: white;
 }
 .services-section .services .service:hover .service-icons .fa-arrow-up{
     background-color: orange;
-    transition:all 0.2s ease-in-out !important;
-}
-.services-section .services .service:hover .service-icons .fa{
-    color: white;
-    transition:all 0.2s ease-in-out !important;
+    transition:all 0.2s ease-in-out;
 }
 
-/* media query */
-@media screen and (max-width: 768px){
+
+/* MEDIA QUERY */
+@media screen and (max-width: 414px){
     .services-section .services{
         display: grid;
         grid-template-columns: repeat(1, 1fr) !important;
+        column-gap: 20px;
+        row-gap: 40px;
+        position: relative;
+    }
+    .services-section .services .we-offer img{
+        width: 300px !important;
+        position: absolute;
+        animation: spin 20s linear infinite;
+        top: 50px;
+        left: 60px;
     }
 }
-@media screen and (max-width: 820px){
+@media screen and (max-width: 768px){
     .services-section .services{
-        grid-template-columns: repeat(2, 1fr) !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+        position: relative;
     }
-}
-.services-section .services .we-offer img{
-    left: 150px;
-    width: 360px;
+    .services-section .services .we-offer img{
+        width: 400px;
+        position: absolute;
+        animation: spin 20s linear infinite;
+        top: 50px;
+        left: 13x0px;
+    }
 }

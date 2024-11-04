@@ -8,6 +8,7 @@
     padding-top: 10mm;
     height: auto;
     width: 100%;
+    margin-bottom: 80vh;
 }
 
 .first-div .secound-div{
@@ -138,7 +139,28 @@
 } */
 
 @media screen and (max-width: 1023px) {
+    
     .first-div .secound-div{
         display: block;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .first-div{
+        padding-top: 10mm;
+        height: auto;
+        width: 100%;
+        margin-bottom: 150vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .first-div{
+        padding-top: 10mm;
+        height: auto;
+        width: 100%;
+        margin-bottom: 200vh;
     }
 }
